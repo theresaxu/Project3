@@ -8,7 +8,7 @@
 
 	// 2. Perform database query
 
-	$query  = "SELECT * FROM friends ";
+	$query  = "SELECT * FROM contacts ";
 	$result = mysqli_query($connection, $query);
 
 	
@@ -23,7 +23,7 @@
 
 <head>
 
-	<title>Phonebook</title>
+	<title>Contacts</title>
 
 </head>
 
@@ -31,7 +31,7 @@
 
 
 
-	<h1>Phonebook</h1>
+	<h1>Contact Sheet</h1>
 
 
 
@@ -40,14 +40,14 @@
 
 
 	<tr>
-
 		<th>Id</th>
+		<th>Name</th>
 
-		<th>First Name</th>
-
-		<th>Last Name</th>
+		<th>Email</th>
 
 		<th>Phone Number</th>
+
+		<th>Message</th>
 
 	</tr>
 
@@ -66,14 +66,15 @@
 
 
 	<tr>
-
 		<td><?php echo $pages["id"]; ?></td>
 
-		<td><?php echo $pages["first_name"]; ?></td>
+		<td><?php echo $pages["name"]; ?></td>
 
-		<td><?php echo $pages["last_name"]; ?></td>
+		<td><?php echo $pages["email"]; ?></td>
 
 		<td><?php echo $pages["phone"]; ?></td>
+
+		<td><?php echo $pages["message"]; ?></td>
 
 	</tr>
 

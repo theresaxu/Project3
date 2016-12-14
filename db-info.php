@@ -1,8 +1,8 @@
 <?php
 	// 1. Create a database connection
 	$dbhost = "localhost";
-	$dbuser = "phonebook";
+	$dbuser = "contacts";
 	$dbpass = "coffee1N/!";
-	$dbname = "phonebook";
+	$dbname = "contacts";
 	
 ?>
